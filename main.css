@@ -1,0 +1,208 @@
+body{
+  width:100%;
+  height:auto;
+  background-color:#9E9292;
+  margin:0 auto;
+  line-height:1;
+}
+@font-face {
+    font-family: Kellunc;
+    src:url('kellunc.ttf');
+}
+.container{
+  width:1000px;
+  margin:0 auto;
+  height:100%;
+}
+header{
+  position:relative;
+  z-index:5;
+  background:url('top.jpg') no-repeat center;
+  height:125px;
+  font-family:Kellunc;
+  display:flex;
+  align-items:center;
+  font-size:1.1em;
+  margin:0 auto;
+  justify-content:center;
+  padding-right:0.05em;
+  margin-top:-0.05em;
+  margin-right:0.3em;
+  color:#202222;
+}
+header>.cz{
+  float:right;
+  position:absolute;
+  min-width:32px;
+  min-height:18px;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/240px-Flag_of_the_Czech_Republic.svg.png') no-repeat center;
+  background-size:100%;
+  right:55px;
+  top:22px;
+}
+header>.eng{
+    float:right;
+    position:absolute;
+    min-width:36px;
+    min-height:28px;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png') no-repeat center;
+  background-size:100%;
+  right:15px;
+  top:16px;
+}
+header>h1{
+  padding-top:0.3em;
+}
+nav{
+    position:relative;
+    display:block;
+  z-index:2;
+  width:17%;
+  height:65em;
+  background-color:#30b9a7;
+  margin:0 0 0 14px;
+  box-shadow:inset 0em 0em 1.8em -0.3em #000,
+     -0.15em -0.3em 0.7em -0.15em #000,
+     inset 0em 1.05em 0.7em -1.1em #000;
+  font-family:"Alegreya Sans SC";
+  float:left;
+  -moz-border-bottom-left-radius:1.1em;
+  -ms-border-bottom-left-radius:1.1em;
+  -webkit-border-bottom-left-radius:1.1em;
+       border-bottom-left-radius:1.1em;
+}
+nav>.title{
+  padding-top:1.5em;
+  margin-left:6%;
+  font-size:1.4em;
+  color:#303030;
+  margin-bottom:0.5em;
+}
+nav>ul{
+list-style-type:none;
+padding:0;
+margin:0 auto;
+margin-left:6%;
+font-size:1.1em;
+}
+nav>ul>li{
+  margin-right:6%;
+  padding:14px 7% 14px 5%;
+  cursor:pointer;
+  color:#202020;
+  transition:all 0.3s;
+  font-size:1em;
+}
+nav>ul>li:first-child{
+color:#790900;
+transform:scale(1.1);
+padding-left:1.1em;
+background-color:#39b0a9;
+}
+nav>ul>li:hover{
+  color:#790900;
+  transform:scale(1.1);
+  padding-left:1.1em;
+}
+main{
+  position:relative;
+  z-index:1;
+ width:calc( 81% - 13px );
+ background-color:#FFFFff;
+ float:left;
+ height:65em;
+     box-shadow: inset 0 0.5em 0.8em -7px #000,
+        -0.23em -0.45em 0.7em 0.2em #000;
+-moz-border-bottom-right-radius:1.1em;
+-ms-border-bottom-right-radius:1.1em;
+-webkit-border-bottom-right-radius:1.1em;
+border-bottom-right-radius:1.1em;
+}
+main>.title{
+  padding:0.6em 0 0.3em 0;
+  font-size:3.2em;
+  margin-left:3.5%;
+    font-family:"Alegreya Sans SC";
+    color:#303030;
+}
+main p{
+    font-family:"Open Sans";
+    color:#303030;
+    padding-left:3%;
+    line-height:1.64;
+}
+main .imageList{
+  list-style-type:none;
+  float:right;
+  direction:ltr;
+    width:20%;
+  box-sizing: border-box;
+  font-size:0.8em;
+  display: block;
+    padding-right:0%;
+    margin-right:-3%;
+}
+main .imageList:nth-child(2){
+  padding-right:3%;
+      width:29%;
+        margin-right:0%;
+}
+main .imageList li{
+  padding:7px 7px 4px 7px;
+  background:#eee;
+  border:1px solid #ccc;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
+border-radius: 5px;
+}
+main .imageList>#statek{
+  margin-top:7px;
+}
+main .imageList img{
+  width:100%;
+  -moz-border-radius:0.2em;
+  -ms-border-radius:0.2em;
+  -webkit-border-radius:0.2em;
+  border-radius:0.2em;
+}
+main .wiersz{
+
+  width:50%;
+  margin:0 auto;
+  text-align:center;
+  line-height:3;
+      padding-left:0%;
+  margin-top:3.7em;
+}
+footer{
+  height:3em;
+  font-size:0.7em;
+  background:linear-gradient(to bottom,#a9e8df,#15937b);
+  -moz-border-bottom-left-radius:20%;
+    -webkit-border-bottom-left-radius:20%;
+      -ms-border-bottom-left-radius:20%;
+        border-bottom-left-radius:20%;
+  -moz-border-bottom-right-radius:20%;
+    -webkit-border-bottom-right-radius:20%;
+      -ms-border-bottom-right-radius:20%;
+        border-bottom-right-radius:20%;
+        clear:both;
+        width:930px;
+        margin:0 auto;
+        box-shadow: inset 0 0.5em 1.1em -0.4em #000;
+        display:flex;
+        align-items:center;
+        font-family:"Open Sans";
+          font-weight:lighter;
+          color:#303030;
+}
+footer>h4{
+  padding:0 0 0 2%;
+  width:85%;
+  font-weight:lighter;
+
+}
+footer>h4>a{
+  padding-left:2%;
+}
